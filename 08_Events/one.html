@@ -34,9 +34,21 @@
     //attachEvent()
     //jQuery - on
 
-    document.getElementById('pic3').addEventListener('click', function (e){
-       console.log(e)
+    //type,timestamp,defaultPrevented
+    //target,toElement,srcElement,currentTarget
+    //clientX,clientY,screenX,screenY
+    //altKey,ctrlKey,shiftKey,keyCode
+
+    document.getElementById('images').addEventListener('click', function (e) {
+        console.log("Clicked  inside ul");
+        console.log(e)
     }, false)
+    
+    document.getElementById('pic3').addEventListener('click', function (e) {
+        console.log("OWL Clicked");
+        console.log(e)
+    }, false)
+
 
 </script>
 
