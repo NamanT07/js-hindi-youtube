@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>htmlEVENTS</title>
 </head>
+
 <body style="background-color: #414141;color: aliceblue;">
     <h2>Amazing Images</h2>
     <div>
         <ul class="images">
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/34769612/pexels-photo-34769612.jpeg" alt="PhotoShop"></li>
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/13863847/pexels-photo-13863847.jpeg" alt="PhotoShop"></li>
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/33929658/pexels-photo-33929658.jpeg" alt="PhotoShop"></li>
-            <li><img width="200px" id="photoshop" src="https://cdn.pixabay.com/photo/2017/03/27/12/50/flower-2178507_1280.jpg" alt="PhotoShop"></li>
-            <li><img width="200px" id="photoshop" src="https://cdn.pixabay.com/photo/2022/10/07/11/02/autumn-7504819_1280.jpg" alt="PhotoShop"></li>
-            <li><a style="color: aliceblue;" href="https://www.google.com/?zx=1764604584077&no_sw_cr=1" id="google">Google</a></li>
+            <li><img width="200px" id="pic1" src="https://images.pexels.com/photos/34769612/pexels-photo-34769612.jpeg"
+                    alt="PhotoShop"></li>
+            <li><img width="200px" id="pic2" src="https://images.pexels.com/photos/13863847/pexels-photo-13863847.jpeg"
+                    alt="PhotoShop"></li>
+            <li><img width="200px" id="pic3" src="https://images.pexels.com/photos/33929658/pexels-photo-33929658.jpeg"
+                    alt="PhotoShop"></li>
+            <li><img width="200px" id="pic4"
+                    src="https://cdn.pixabay.com/photo/2017/03/27/12/50/flower-2178507_1280.jpg" alt="PhotoShop"></li>
+            <li><img width="200px" id="pic5"
+                    src="https://cdn.pixabay.com/photo/2022/10/07/11/02/autumn-7504819_1280.jpg" alt="PhotoShop"></li>
+            <li><a style="color: aliceblue;" href="https://www.google.com/?zx=1764604584077&no_sw_cr=1"
+                    id="google">Google</a></li>
         </ul>
     </div>
 </body>
+<script>
+    // document.getElementById('pic3').onclick=function(){
+    //     alert('OWL')
+    // }
+
+    //attachEvent()
+    //jQuery - on
+
+    document.getElementById('pic3').addEventListener('click', function (e){
+       console.log(e)
+    }, false)
+
+</script>
+
 </html>
