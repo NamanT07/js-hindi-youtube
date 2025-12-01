@@ -39,23 +39,27 @@
     //clientX,clientY,screenX,screenY
     //altKey,ctrlKey,shiftKey,keyCode
 
-    document.getElementById('images').addEventListener('click', function (e) {
-        console.log("Clicked  inside ul");
-        console.log(e)
-    }, false)
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("Clicked  inside ul");
+    //     console.log(e)
+    // }, false)
     
-    document.getElementById('pic3').addEventListener('click', function (e) {
-        console.log("OWL Clicked");
-        e.stopPropagation()
-        console.log(e)
-    }, false)
+    // document.getElementById('pic3').addEventListener('click', function (e) {
+    //     console.log("OWL Clicked");
+    //     e.stopPropagation()
+    //     console.log(e)
+    // }, false)
 
-    document.getElementById('google').addEventListener('click',function(e){
-        console.log('Google Clicked')
-        e.defaultPrevented()
-    })
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log('Google Clicked')
+    // })
 
-
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e);
+        
+    },false)
 </script>
 
 </html>
