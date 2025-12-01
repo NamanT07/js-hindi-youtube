@@ -10,7 +10,7 @@
 <body style="background-color: #414141;color: aliceblue;">
     <h2>Amazing Images</h2>
     <div>
-        <ul class="images">
+        <ul id="images">
             <li><img width="200px" id="pic1" src="https://images.pexels.com/photos/34769612/pexels-photo-34769612.jpeg"
                     alt="PhotoShop"></li>
             <li><img width="200px" id="pic2" src="https://images.pexels.com/photos/13863847/pexels-photo-13863847.jpeg"
@@ -46,8 +46,14 @@
     
     document.getElementById('pic3').addEventListener('click', function (e) {
         console.log("OWL Clicked");
+        e.stopPropagation()
         console.log(e)
     }, false)
+
+    document.getElementById('google').addEventListener('click',function(e){
+        console.log('Google Clicked')
+        e.defaultPrevented()
+    })
 
 
 </script>
